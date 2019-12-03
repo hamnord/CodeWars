@@ -10,27 +10,30 @@ public class Kyu8 {
   // Your xor function should have the behaviour described above
   // returning true if exactly one of the two expressions evaluate to true, false otherwise.
   public static boolean xor(boolean a, boolean b) {
-    if( a == b ){
-      return true;
-    }
-    else{
-      return false;
-    }
+    if( a == b ) {
+      return true; }
+    else {
+      return false; }
   }
 
   // Create a public class called Cube without a constructor which gets one single private Integer variable Side,
   // a getter GetSide() and a setter SetSide(int num) method for this property.
-
   private int side;
-
   public int getSide() {return this.side;}
-
   public void setSide(int num) { this.side = num;}
 
-  //Create a function (or write a script in Shell) that takes an integer as an argument
-  // and returns "Even" for even numbers or "Odd" for odd numbers.
+  //Simple challenge - Output should be the length of the longest word, as a number.
+  public static int findLongest(String str){
+    String[] spl = str.split(" ");
+    int longest = 0;
 
-  public static String even_or_odd(int number) {
-    return (number % 2 == 0) ? "Even" : "Odd";
-
+    for (int i=0; i < spl.length; i++) {
+      if (longest < spl[i].length()) {
+        longest = spl[i].length();
+      }
+    }
+    return longest;
   }
+
+}
+
