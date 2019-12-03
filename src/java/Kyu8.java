@@ -35,5 +35,25 @@ public class Kyu8 {
     return longest;
   }
 
+  //You task is to implement an simple interpreter for the notorious esoteric language HQ9+
+  // that will work for a single character input:
+ // If the input is 'H', return 'Hello World!'
+ // If the input is 'Q', return the input
+ // If the input is '9', return the full lyrics of 99 Bottles of Beer. 
+
+  public static String HQ9(char code) {
+
+    if (code == ('H')){
+      return "Hello World!"; }
+
+    else if ( code == ('Q')){
+      return "Q" ;}
+
+    else if (code == ('9')){
+      return "99 bottles of beer on the wall, 99 bottles of beer.";}
+
+    else{ return null;}
+  }
+
 }
 
