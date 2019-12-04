@@ -55,5 +55,12 @@ public class Kyu8 {
     else{ return null;}
   }
 
+  //Complete the function which converts hex number (given as a string) to a decimal number.
+
+  public static int hexToDec(final String hexString) {
+    int decimal = Integer.parseInt(hexString,16);
+    return decimal;
+  }
+
 }
 
